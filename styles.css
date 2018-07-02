@@ -49,6 +49,7 @@ form {
 
 p {
   font-weight: 300;
+  color: #404041;
   }
 
 .top-paragraph {
@@ -58,6 +59,7 @@ p {
 .last-guess-value {
   font-size: 6em;
   color: #EB008B;
+  line-height: 1.2em;
 }
 
 .bottom-paragraph {
