@@ -70,11 +70,22 @@ button {
   width: 7em;
   border-radius: 30px;
   color: #FFF;
-  background-color: #D0D2D3;
+  background-color: #929497;
   font-size: 1em;
   font-weight: 300;
 }
 
 .reset-button {
   width: 15em;
+}
+
+button:disabled {
+  color: #FFF;
+  background-color: #D0D2D3;
+}
+
+button:hover {
+  color: #FFF;
+  background-color: #EB008B;
+  
 }

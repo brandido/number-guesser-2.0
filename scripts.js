@@ -49,7 +49,7 @@ function randomNumber() {
 };
 //use reload method
 function reloadPage(e) {
-  e.preventDefault();
+  // e.preventDefault();
   location.reload();
 }
 
@@ -62,7 +62,7 @@ function enableBtn(e) {
 
 }
 
-
+// Ben showed Kevin how to set min and max
 
 // Listen for event (onchange attribute)on input form, if there enable clear button
 // use change event with 
