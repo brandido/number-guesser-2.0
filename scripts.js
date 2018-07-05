@@ -11,9 +11,6 @@ var minValue = document.querySelector('.min-value');
 userInputGuess.addEventListener('keyup', enableBtn)
 inputForm.addEventListener('submit', startGame);
 resetButton.addEventListener('click', reloadPage);
-// maxNum and minNum functions not working yet
-// maxValue.addEventListener('keyup', maxNum)
-// minValue.addEventListener('keyup', minNum)
 
 var resultRandomNumber = randomNumber();
 console.log(resultRandomNumber);
@@ -26,7 +23,6 @@ e.preventDefault();
 };
 
 function randomNumber() {
-  var maxNum = parseInt(maxValue.value);
   return Math.floor(Math.random() * 100 + 1);
   console.log(randomNumber)
 };
@@ -52,14 +48,5 @@ function enableBtn(e) {
   guessButton.removeAttribute('disabled');
 };
 
-// make function for with condition for logic of adjusting min and max up and down by 10 if user wins
-// find method that adjusts or changes attribute
-// function randomNumber(max) {
-//   var maxNum = parseInt(maxValue.value);
-//   console.log(maxNum); 
-//   maxNum.setAttribute(max, maxNum)
-//   return Math.floor(Math.random() * 100 + 1);
-//   console.log(randomNumber)
-// };
 
 
