@@ -1,69 +1,72 @@
 * {
   box-sizing: border-box;
-  /*border: red 1px solid !important;*/
 }
 
+/*Positioning - Box Model*/
 body {
   text-align: center;
   font-size: 2em;
   font-family: 'Open Sans', sans-serif;
 }
 
+form {
+  margin: auto;
+}
+
+.min-value, 
+.max-value {
+  width: 7.5em;
+  font-size: 1em;
+}
+
+.user-guess-input {
+  width: 15.3em;
+  font-size: 1em;
+}
+
+.min-max-input-container {
+  width: 15.5em;
+  margin: 1em auto;
+}
+
+.form-buttons-container {
+  width: 15.5em;
+  margin: 1em auto;
+}
+
+.top-paragraph {
+  margin-bottom: 0;
+}
+
+.bottom-paragraph {
+  margin-top: 0;
+}
+
+/*Styling*/
 header {
   background-color: #404041;
 }
 
 h1 {
-  color:  #ED458B;
+  color: #ED458B;
   font-weight: 700;
   margin-top: -8px;
 }
 
 .light-grey {
-  color:  #E6E7E8;
+  color: #E6E7E8;
   font-weight: 300;
 }
-
-form {
-  /*display: flex;
-  flex-wrap: wrap;*/
-  margin: auto;
-}
-
-.user-guess-input {
-  width: 15em;
-  font-size: 1em;
-}
-
-.form-buttons-container {
-  width: 15em;
-  margin: 1em auto;
-  /*display: flex;
-  justify-content: space-between;*/
-}
-
-/*.enabled-button {
-  color: #FFF;
-  background-color: #929497;
-}*/
 
 p {
   font-weight: 300;
   color: #404041;
   }
 
-.top-paragraph {
-  margin-bottom: 0;
-}
-
 .last-guess-value {
   font-size: 6em;
   color: #EB008B;
   line-height: 1.2em;
-}
-
-.bottom-paragraph {
-  margin-top: 0;
 }
 
 button {
@@ -79,6 +82,7 @@ button {
   width: 15em;
 }
 
+/*Pseudo-Styles*/
 button:disabled {
   color: #FFF;
   background-color: #D0D2D3;

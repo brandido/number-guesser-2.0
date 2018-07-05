@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Number Guesser</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <h1>Number <span class="light-grey">Guesser</span></h1>
-  </header>
-   <main>
-  <form class="input-form">
-    <label>
-      <input type="number" name="user-guess" class="user-guess-input" 
-      placeholder="Enter your guess" min="0" max="100">
-    </label>
-    <div class="form-buttons-container" >
-      <!-- put disabled attribute on all btns -->
-      <button class="submit-guess-button">Guess</button>
-      <!-- clicking the button should clear all inputs with the parent -->
-      <button class="clear-form-button" type="reset" disabled>Clear</button>
-    </div>   
-    <p class="top-paragraph">Your last guess was</p>
-    <!-- use output but don't really need it -->
-    <output class="last-guess-value">25</output>
-    <p class="guess-feedback bottom-paragraph">That was too high</p>
-    <button class="reset-button" type="reset" disabled>Reset</button>
-  </form>
-  </main>
-  <script type="text/javascript" src="scripts.js"></script>
-</body>
+  <head>
+    <title>Number Guesser</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Number <span class="light-grey">Guesser</span></h1>
+    </header>
+     <main>
+    <form class="input-form">
+      <div class="min-max-input-container">
+        <label>
+          <input type="number" name="min-value" class="min-value" 
+          placeholder="Enter min value" min="0" max="100">
+        </label>
+        <label>
+          <input type="number" name="max-value" class="max-value" 
+          placeholder="Enter max value" min="0" max="100">
+        </label>
+      </div>
+      <label>
+        <input type="number" name="user-guess" class="user-guess-input" 
+        placeholder="Enter your guess" min="0" max="100">
+      </label>
+      <div class="form-buttons-container" >
+        <button class="submit-guess-button">Guess</button>
+        <button class="clear-form-button" type="reset" disabled>Clear</button>
+      </div>   
+      <p class="top-paragraph">Your last guess was</p>
+      <output class="last-guess-value">25</output>
+      <p class="guess-feedback bottom-paragraph">That was too high</p>
+      <button class="reset-button" type="reset" disabled>Reset</button>
+    </form>
+    </main>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
 </html>
